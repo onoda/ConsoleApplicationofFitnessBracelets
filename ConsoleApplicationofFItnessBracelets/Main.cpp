@@ -4,10 +4,10 @@
 #include<Windows.h>
 using namespace std;
 unsigned menu();//考虑鲁棒性，需要避免用户输入非数字时会出现的卡死现象;
-
+void My_indicators();
 /*
 
-需要添加函数声明
+*需要添加函数声明
 
 */	
 
@@ -28,7 +28,7 @@ int main()
 		choice = menu();
 		switch (choice)
 		{
-		case my_indicators:
+		case my_indicators: My_indicators();
 			break;//显示自己的各项指标——ofl
 		case input_indicators:
 			break;//输入各项指标，考虑编写函数input(int)来实现详细功能——ifl
