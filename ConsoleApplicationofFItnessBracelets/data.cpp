@@ -41,4 +41,3 @@ struct individual
     float distance;
 };
 std::vector<individual> men(1);
-
